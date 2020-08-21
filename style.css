@@ -1,0 +1,346 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html,
+body {
+  background-image: url(img/image1.png);
+  background-repeat: repeat;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 80%;
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.card {
+  height: 35%;
+  padding: 2rem;
+  max-width: 92%;
+  width: 92%;
+  margin: 2rem auto;
+  background-color: #232b3d;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.votes {
+  text-align: center;
+}
+
+.votes p {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 21px;
+}
+
+.votes #Total-vote {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  line-height: 76px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.progress-bar {
+  width: 98%;
+  height: 0.5rem;
+  margin: 0 auto;
+  border-radius: 0.4rem;
+  background: #141d2e;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 0.4rem;
+  background: #f7b354;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#grid {
+  display: grid;
+  place-items: center;
+  height: 60%;
+  grid-template-columns: repeat(2, 6fr);
+  grid-gap: 1rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#grid .box,
+#second-grid .box {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 7px;
+  border-radius: 0.4rem;
+  width: 14rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 2px 2px 3px 2px #ccc;
+}
+
+.box .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80%;
+  flex-grow: 1;
+  flex-shrink: inherit;
+}
+
+.box .details .status {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 8rem;
+  height: 3rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+
+.details .name {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 21px;
+}
+
+.status .btn1 {
+  flex-grow: 3;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 3rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+.btn2 {
+  flex-grow: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 3rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.btn3 {
+  flex-grow: 3;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 3rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.box .image {
+  width: 4rem;
+  height: 4rem;
+}
+.box .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 3rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 6rem;
+  margin: 1.5rem auto;
+}
+
+footer .leader-board1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 3rem;
+  border: 0;
+  background: #1e2a5a;
+  border-radius: 10px;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer .finish {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 21px;
+  text-align: center;
+  color: #ee1a30;
+  text-decoration: none;
+}
+
+/* the modal design begins */
+
+.container2 {
+  max-width: 80%;
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  background-color: white;
+  border-radius: 1rem;
+  display: none;
+}
+
+.container2 .leaderboard {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 21px;
+  text-align: center;
+  width: 80%;
+  margin: 2rem auto;
+  color: #232b3d;
+}
+#grid .box,
+#second-grid .box {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 2px 2px 3px 2px #ccc;
+}
+
+#second-grid {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  height: 60%;
+  grid-template-columns: repeat(2, 6fr);
+  grid-gap: 1rem;
+}
+
+#second-grid .box .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#second-grid .box .details .voting-value {
+  width: 4rem;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #232b3d;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* media querry for responsive screen */
+
+@media screen and (max-width: 826px) {
+  .container {
+    max-width: 70%;
+    height: auto;
+    margin: 1rem auto;
+    background-color: white;
+    border-radius: 1rem;
+    padding-top: 2rem;
+    box-sizing: border-box;
+  }
+  .container2 {
+    max-width: 70%;
+    height: auto;
+    margin: 1rem auto;
+    background-color: white;
+    border-radius: 1rem;
+    padding-top: 2rem;
+    box-sizing: border-box;
+  }
+
+  #grid {
+    display: grid;
+    place-items: center;
+    height: 60%;
+    width: 100%;
+    grid-template-columns: repeat(1, 6fr);
+    grid-gap: 1rem;
+    margin: 0 auto;
+  }
+  .container2 #second-grid {
+    display: grid;
+    place-items: center;
+    height: auto;
+    width: 100%;
+    grid-template-columns: repeat(1, 4fr);
+    grid-gap: 1rem;
+    margin: 0 auto;
+  }
+  #second-grid .status .btn {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 50%;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    text-align: center;
+  }
+
+  /* MAKING THE BOX RESPONSIVE */
+  #grid .box,
+  #second-grid .box {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    padding: 0.8rem;
+    box-shadow: 2px 2px 3px 2px #ccc;
+  }
+}

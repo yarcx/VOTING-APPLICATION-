@@ -1,0 +1,65 @@
+        <div class="box">
+          <div class="image">
+            <img src="img/Brighto.jpg" alt="dorathy" />
+          </div>
+          <div class="details">
+            <div class="name">Brighto</div>
+            <div class="status">
+              <div class="btn1 minus">-</div>
+              <div type="text" class="btn2 voting-value">0</div>
+              <div class="btn3 possitive">+</div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="img/Erica.jpg" alt="dorathy" />
+          </div>
+          <div class="details">
+            <div class="name">Erica</div>
+            <div class="status">
+              <div class="btn1 minus">-</div>
+              <div type="text" class="btn2 voting-value">0</div>
+              <div class="btn3 possitive">+</div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="img/Nengi.jpeg" alt="dorathy" />
+          </div>
+          <div class="details">
+            <div class="name">Nengi</div>
+            <div class="status">
+              <div class="btn1 minus">-</div>
+              <div type="text" class="btn2 voting-value">0</div>
+              <div class="btn3 possitive">+</div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="img/Praise.jpeg" alt="dorathy" />
+          </div>
+          <div class="details">
+            <div class="name">Praise</div>
+            <div class="status">
+              <div class="btn1 minus">-</div>
+              <div type="text" class="btn2 voting-value">0</div>
+              <div class="btn3 possitive">+</div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="img/Prince.jpg" alt="dorathy" />
+          </div>
+          <div class="details">
+            <div class="name">Dorathy</div>
+            <div class="status">
+              <div class="btn1 minus">-</div>
+              <div type="text" class="btn2 voting-value">0</div>
+              <div class="btn3 possitive">+</div>
+            </div>
+          </div>
+        </div>
